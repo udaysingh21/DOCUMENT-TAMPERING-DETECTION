@@ -1,0 +1,24 @@
+PCA, or Principal Component Analysis, is a tool used to simplify and understand complex data. 
+Imagine you have lots of variables describing something, like features of a photo. 
+PCA helps find the most important aspects (principal components) that capture the most variation in the data. 
+It then allows you to visualize and analyze the data with fewer dimensions, making patterns and differences easier to see. 
+It's like summarizing a big story with key points, making it simpler to grasp.
+
+
+"Fewer dimensions" refers to reducing the number of variables or features used to describe data. 
+In a dataset, each variable represents a dimension. 
+For example, if you have data with height, weight, and age, you're working in three dimensions. 
+PCA helps you identify the most relevant dimensions, called principal components, and discards less important ones. 
+This reduction simplifies the data while retaining most of the important information. 
+So, "fewer dimensions" means working with a smaller set of variables that still capture the main patterns and trends in the data.
+
+
+Columns removed/adjusted before applying PCA are as follows:
+    1. orig -> file path - non-numerical
+    2. mse_lab -> negative values (PCA works only one non-negative values)
+    3. img_f -> tuple 
+
+
+Variance signifies the spread or variability of data points around the mean or center. 
+In the context of PCA and dimensionality reduction, the explained variance ratio for each principal component indicates how much of the 
+original data's variability is retained by that specific component
